@@ -1,0 +1,458 @@
+body {
+     background-color: #d3e0ea;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: rgb(22,22,29);
+ }
+
+
+/*----------------------Header-------------------*/
+
+
+header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+    justify-content: space-evenly;
+    align-items: baseline;
+    color: rgba(19, 19, 12, 0.685);
+    width: 100vw;
+    height: auto;
+    max-height: 260px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cfc5a5;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.logo {  
+    margin: 15px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1.5em;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    color: black;
+}
+
+.menu a:hover{
+    text-transform: uppercase;
+    text-shadow: rgb(81, 138, 138) 1px 1px ;
+}
+
+.myphone {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #cfc5a5;
+    margin-right: 35px;
+}
+
+.myphone h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.myphone img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+
+
+/*----------------------HomePage-------------------*/
+
+
+
+main {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+position: absolute;
+display: flex;
+flex-direction: column;
+right: 15px;
+top: 50%;
+bottom: 50%;
+}
+
+aside button{
+margin-top: 5px;
+margin-bottom: 5px;
+padding: 5px 5px 5px 5px;
+border: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.container h1 {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.container p {
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+/*----------------------Formulaire-------------------*/
+
+.form-horizontal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #433520;
+    border: 5px solid #cfc5a5;
+}
+
+.form-horizontal input{
+    margin: auto 10px auto 10px;
+    padding: 10px 25px 10px 25px;
+    height: auto;
+    width: 100%;
+}
+
+#btn-submit {
+    color: white;
+    background-color: black;
+}
+
+
+/*----------------------Grille Texte-------------------*/
+
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid-left {
+    margin-bottom: 100px;
+    margin-right: 25px;
+}
+
+.grid-right {
+    margin-top: 100px;
+    margin-left: 25px;
+}
+
+
+/*------------------Services------------------------*/
+
+.bloc-create {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 100vw;
+
+}
+
+.bloc-create h4{
+    font-size: 1.5em;
+
+}
+
+.bloc-create img {
+    width: 100px;
+    height: 90px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 100px;
+}
+
+.first-cell-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.first-cell-create p{
+    text-align: center;
+}
+
+.second-cell-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.second-cell-create p{
+    text-align: center;
+}
+
+.third-cell-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.third-cell-create p{
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.btn-top {
+    margin-bottom: 10px;
+    background-color: #eae3c8;
+    border: 2px solid #cfc5a5;
+    color: black;
+    padding: 7px 16px;
+}
+
+.btn-top a{
+    color: black;
+}
+
+.btn-bottom {
+    background-color: black;
+    border: 2px solid #cfc5a5;
+    padding: 7px 16px;
+}
+.btn-bottom a{
+    color: white;
+}
+
+/*----------------------Footer-------------------*/
+
+
+footer {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(54, 1, 1);
+}
+
+footer a:hover{
+    color: rgb(163, 0, 0);
+}
+
+
+/*----------------------Header Media-------------------*/
+
+@media screen and (max-width: 1000px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-row-gap: 5px;
+        align-items: center;
+        height: auto;
+    }
+    .logo {
+        top: 5px;
+        position: absolute;
+        margin-bottom: 35px;
+        left: 20px;
+    }
+
+    .menu {
+        display: grid;
+        margin: auto 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-column: 2;
+        grid-row: 1;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .menu a {
+        padding: 15px 5px 15px 5px;
+    }
+
+    .myphone {
+        position: relative;
+        grid-column: 2;
+        grid-row: 2;
+        display: flex;
+        align-items: center;
+        border-left: 0px;
+        margin: 0px auto 10px auto;
+    }
+}
+
+/*----------------------HomePage Media-------------------*/
+
+@media (max-width: 1000px)  {
+    h1 {
+        font-size: 1.8em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container p {
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+
+
+/*----------------------Fomulaire Media-------------------*/
+
+
+@media (max-width: 1000px)  {
+
+    .form-horizontal {
+        background-color: #433520b9;
+        border: 2px solid #cfc5a5;
+        flex-direction: column;
+        height: auto;
+        padding: 10px 5px 10px 5px;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        margin: auto;
+    }
+    .form-horizontal input{
+        max-width: 200px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+/*----------------------Grille Texte Media-------------------*/
+
+@media (max-width: 1000px)  {
+
+    .grid-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: auto 20;
+    }
+
+    .grid-left {
+        margin-bottom: 100px;
+        margin-right: 25px;
+        margin-left: 15px;
+    }
+
+    .grid-right {
+        margin-top: 100px;
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 847px) {
+
+    .grid-container {
+        flex-direction: column;
+    }
+
+    .grid-left {
+        margin-bottom: 50px;
+        margin-right: 25px;
+        margin-left: 15px;
+    }
+
+    .grid-right {
+        margin-top: 50px;
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+}
+
+/*-------------------Services media------------*/
+
+@media (max-width: 1000px)  {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 55px;
+        margin-top: 100px;
+        justify-content: center;
+        max-width: 50vw;
+        }
+
+    .first-cell-create {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .second-cell-create {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .third-cell-create {
+        grid-column: 1;
+        grid-row: 3;
+    }
+}
+
+
+/*----------------------Footer Media-------------------*/
+
+
+footer {
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    font-size: 0.9em;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: rgb(54, 1, 1);
+}
+
